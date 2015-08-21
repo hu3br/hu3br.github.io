@@ -3,8 +3,10 @@ var site= {
   subtitle: "subtitulo",
   zuera: "zuera"
 };
-$(document).ready(function()) {
+$(document).ready(function() {
   $("[data-admin]").each(function(){
-    console.log(this);
+    var admin = $(this).attr("data-admin");
+	$(this).html(site[admin]);
   }) 
-};
+});
+
