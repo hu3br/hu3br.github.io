@@ -3,4 +3,8 @@ var site= {
   subtitle: "subtitulo",
   zuera: "zuera"
 };
-console.log("site")
+$(document).ready(function()) {
+  $("[data-admin]").each(function(){
+    console.log(this);
+  }) 
+};
